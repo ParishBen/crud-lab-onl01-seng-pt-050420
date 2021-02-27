@@ -5,6 +5,7 @@ class Restaurants extends Component {
 
   render() {
     const { restaurants, deleteRestaurant } = this.props;
+    console.log(this.state, this.props, restaurants[0])
     const restaurantList = restaurants.map(restaurant => {
       return (
         <Restaurant

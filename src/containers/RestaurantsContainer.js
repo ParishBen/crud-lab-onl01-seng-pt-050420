@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 
 class RestaurantsContainer extends Component {
   render() {
+    console.log(this.props)
     return (
       <div>
         <RestaurantInput addRestaurant={this.props.addRestaurant}/>

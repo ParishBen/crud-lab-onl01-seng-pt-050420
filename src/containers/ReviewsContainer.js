@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 
 class ReviewsContainer extends Component {
   render() {
+    console.log(this.props)
     return (
       <div>
         <ReviewInput
@@ -20,10 +21,10 @@ class ReviewsContainer extends Component {
     );
   }
 }
+//const mapStateToProps = state => ({ restaurants: state.restaurants })
 
-const mapStateToProps = ({reviews}) => {
-  return {reviews}
-}
+const mapStateToProps = state => ({reviews: state.reviews}) 
+
 
 const mapDispatchToProps = dispatch => ({
   addReview: review => dispatch({type: 'ADD_REVIEW', review}),
